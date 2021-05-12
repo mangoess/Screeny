@@ -1,0 +1,13 @@
+Thanks for installing this program!
+When the program is running press "]" for the screenshot
+This has only been tested on Windows 10 and not any other operating systen
+By downloading this you agree that you are not allowed to distrubute a version of this code
+that can potentially cause damage to someones pc
+
+https://www.github.com/mangoess Is not responsible for any damage you cause to the machine.
+
+(Pro Tip : If you want this to run in your background, change the file's ending to ".pyw")
+
+(Pro'er, Pro Tip : Go into the file and change the (INSERT PATH HERE), with where you want to save it!
+
+(Make sure the program and the images folder are in the same directory, or else it will not work!
