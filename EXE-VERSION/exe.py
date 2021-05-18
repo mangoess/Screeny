@@ -24,7 +24,7 @@ def screenshot():
                 letters = string.ascii_lowercase
                 result_str = ''.join(random.choice(letters) for i in range(6))
                 myScreenshot = pyautogui.screenshot()
-                myScreenshot.save(r'C:\Users\adamt\Documents\Code\Python\EXE-VERSION\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
+                myScreenshot.save(r'(INSERT PATH HERE)\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
                 press = '1'
                 time.sleep(5)
                 press = '0'
