@@ -16,7 +16,7 @@ def screenshot():
             if keyboard.is_pressed("Z"):
                 theprefix = input("Please enter a new prefix!\n")
                 print("Saved, you can now press", theprefix, "to screenshot your game!")
-        if keyboard.is_pressed(theprefix):  # if key ']' is pressed
+        if keyboard.is_pressed(theprefix):  # if the assaigned key is pressed
             if press == '1':
                 pass
             elif press == '0':
@@ -24,7 +24,7 @@ def screenshot():
                 letters = string.ascii_lowercase
                 result_str = ''.join(random.choice(letters) for i in range(6))
                 myScreenshot = pyautogui.screenshot()
-                myScreenshot.save(r'C:\Users\adamt\Documents\Code\Python\EXE-VERSION\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
+                myScreenshot.save(r'(INSERT PATH HERE)\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
                 press = '1'
                 time.sleep(5)
                 press = '0'
