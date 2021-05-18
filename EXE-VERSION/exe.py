@@ -5,7 +5,7 @@ import requests
 import random
 import string
 
-# You want to install these modules first before running, or use the requirements.txt file attached!
+# You don't need to install any modules when running it as an exe!
 
 def screenshot():
     press = '0'
@@ -16,7 +16,7 @@ def screenshot():
             if keyboard.is_pressed("Z"):
                 theprefix = input("Please enter a new prefix!\n")
                 print("Saved, you can now press", theprefix, "to screenshot your game!")
-        if keyboard.is_pressed(theprefix):  # if key ']' is pressed
+        if keyboard.is_pressed(theprefix):  # if the assaigned key is pressed
             if press == '1':
                 pass
             elif press == '0':
