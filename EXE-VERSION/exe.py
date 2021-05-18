@@ -4,7 +4,6 @@ import pyautogui
 import requests
 import random
 import string
-import pillow
 
 # You want to install these modules first before running, or use the requirements.txt file attached!
 
