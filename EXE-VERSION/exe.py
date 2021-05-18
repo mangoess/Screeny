@@ -24,7 +24,7 @@ def screenshot():
                 letters = string.ascii_lowercase
                 result_str = ''.join(random.choice(letters) for i in range(6))
                 myScreenshot = pyautogui.screenshot()
-                myScreenshot.save(r'(INSERT PATH HERE)\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
+                myScreenshot.save(r(pathh, '\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
                 press = '1'
                 time.sleep(5)
                 press = '0'
@@ -33,6 +33,9 @@ def screenshot():
             pass  # if user pressed a key other than the assigned key, then it will pass
 
 
+global pathh
 
 
+pathh = input("Please enter the path that you'd like me to save the images in.\n")
+print("Stored, I will automatically re-route your photos to this area! (If you want to change it, restart the program!
 screenshot()
