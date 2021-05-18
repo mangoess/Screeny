@@ -4,6 +4,7 @@ import pyautogui
 import requests
 import random
 import string
+import pillow
 
 # You want to install these modules first before running, or use the requirements.txt file attached!
 
@@ -13,9 +14,9 @@ def screenshot():
     theprefix = ']'
     while True:  # INFITE LOOP TIME!
         if keyboard.is_pressed("SHIFT"):
-            if keyboard.is_pressed("Z")
-            theprefix = input("Please enter a new prefix!")
-            print("Saved, you can now press", theprefix, "to screenshot your game!")
+            if keyboard.is_pressed("Z"):
+                theprefix = input("Please enter a new prefix!\n")
+                print("Saved, you can now press", theprefix, "to screenshot your game!")
         if keyboard.is_pressed(theprefix):  # if key ']' is pressed
             if press == '1':
                 pass
@@ -24,7 +25,7 @@ def screenshot():
                 letters = string.ascii_lowercase
                 result_str = ''.join(random.choice(letters) for i in range(6))
                 myScreenshot = pyautogui.screenshot()
-                myScreenshot.save(r'(INSERTPATHHERE)\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
+                myScreenshot.save(r'C:\Users\adamt\Documents\Code\Python\EXE-VERSION\Images\SCAMMER{}.png'.format(result_str) ) # Where it saves the file! (Change the (INSERTPATHHERE), with the path leading to the images folder!
                 press = '1'
                 time.sleep(5)
                 press = '0'
