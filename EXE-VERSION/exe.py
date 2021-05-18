@@ -10,8 +10,13 @@ import string
 def screenshot():
     press = '0'
     amount = '1'
+    theprefix = ']'
     while True:  # INFITE LOOP TIME!
-        if keyboard.is_pressed(']'):  # if key ']' is pressed
+        if keyboard.is_pressed("SHIFT"):
+            if keyboard.is_pressed("Z")
+            theprefix = input("Please enter a new prefix!")
+            print("Saved, you can now press", theprefix, "to screenshot your game!")
+        if keyboard.is_pressed(theprefix):  # if key ']' is pressed
             if press == '1':
                 pass
             elif press == '0':
@@ -25,7 +30,7 @@ def screenshot():
                 press = '0'
                 pass
         else:
-            pass  # if user pressed a key other than ], then it will pass
+            pass  # if user pressed a key other than the assigned key, then it will pass
 
 
 
